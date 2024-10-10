@@ -26,6 +26,8 @@
 \date{\small 26. september 2024} % upravte
 
 
+\usepackage{wrapfig}
+\usepackage{amsmath}
 
 \begin{document}
 
@@ -53,9 +55,32 @@ Záverečné poznámky prináša časť~\ref{zaver}.
 
 
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.3\textwidth]{logofiit.png}
+\end{figure}
+
 \section{Navigačné systémy} \label{nejaka}
 
 Z obr.~\ref{f:rozhod} je všetko jasné. 
+
+
+\begin{multline}
+d_1 + d_2 + d_3 + \cdots + d_n = \\
+\sum_{i=1}^{n} d_i = n \times d
+\end{multline}
+
+\[ %matica
+\mathbf{A} = \begin{bmatrix}
+a_{11} & a_{12} & a_{13} & a_{14} \\
+a_{21} & a_{22} & a_{23} & a_{24} \\
+a_{31} & a_{32} & a_{33} & a_{34} \\
+a_{41} & a_{42} & a_{43} & a_{44} \\
+a_{51} & a_{52} & a_{53} & a_{54}
+\end{bmatrix}
+\]
+
+
 
 \begin{figure*}[tbh]
 \centering
@@ -67,15 +92,22 @@ Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný pláva
 
 
 
+
 \section{Najkratšia cesta} \label{najkratsiaCesta}
 
 Navigačné systémy sa snažia nájsť čo najkratšiu cestu, ako vidíme aj v Obrázku č. ~\ref{fig:hladanieNajkratsejCesty}
-\begin{figure}[h!]
+\begin{figure*}[h!]
 \centering
   \includegraphics[scale=0.6]{graf1.png}
   \caption{Hľadanie najkratšej cesty}
   \label{fig:hladanieNajkratsejCesty}
-\end{figure}
+\end{figure*}
+\begin{figure*}[h!]
+\centering
+  \includegraphics[scale=0.4]{graf2.png}
+  \caption{A* algoritmus}
+  \label{fig:hladanieNajkratsejCesty}
+\end{figure*}
 
 
 \section{Iná časť} \label{ina}
